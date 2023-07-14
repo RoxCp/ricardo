@@ -1,0 +1,284 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+body{
+    background-color:rgb(235, 242, 176);
+    font: size 1rem; ;
+}
+
+/* HEADER */
+
+ header{  
+    background-image: linear-gradient(to right, rgb(212, 77, 77), rgb(141, 12, 12));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    border-top: 15px;  
+    box-shadow: 15px 10px 8px rgba(146, 13, 13, 0.5);
+ }
+ .header .logo img{
+    height: 84px;
+    margin: 3px 0px 0px 3px;
+   
+ }
+.header .nav-links li{ 
+   display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links a{
+    font-size: 28px;
+    text-decoration: none;
+    color: inherit;
+
+}
+.welcome img{
+    width: 100%;
+    height: 85px;
+    margin-top: 20px;
+}
+
+/* SECCTION1 (S1) */
+
+ h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Foldit', cursive;
+    font-size: 50px;
+    background-color: hsl(66, 71%, 77%);
+    border-radius: 50px;
+    margin: 20px;
+ }
+p{
+    margin: 10px;
+}
+.imgcentro{
+    display: flex;
+    justify-content: center;
+}
+.imgcentro img{
+    border-radius: 30%;
+}
+.s1 {
+    justify-content: center;
+    margin: 20px auto 50px;
+    width: 95%;
+}
+.box{
+    display:block;
+    background-color: rgb(141, 12, 12);
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+}
+.box img{
+    width: 300px;
+}
+
+/* BOXBUTTON 1 (BB1) */
+
+.boxbutton{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 95%;    
+    background-color: hsl(0, 84%, 30%);
+    margin: 50px auto 50px;
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+    text-align: center; 
+    padding:  10px 0px ;
+    box-shadow: 5px 15px 15px rgba(189, 26, 26, 0.5);
+}
+#botones div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    padding: 10px;
+}
+#info1 .lista{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(0, 67%, 43%);
+   height: 80px;
+   border-radius: 20px;
+}
+#info2 .lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 67%, 43%);
+    height: 80px;
+    border-radius: 20px;
+}
+#info3 .lista{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: hsl(0, 67%, 43%);
+   height: 80px;
+   border-radius: 20px;
+}
+#button1{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+#button2{
+    margin: 0px 10% 0px 10%;
+    border: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+#button3{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.boxbutton #botones{
+  width: 100%;
+}
+
+/* SECCTION 2 (S2) */
+
+.s2{
+    justify-content: center;
+    margin: 50px auto 50px;
+    width: 95%;
+}
+.rrss {
+    display: flex;
+    justify-content: space-around;
+
+}
+.but3{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+    background-color: rgb(183, 36, 36);
+}
+
+/* BOXBUTTON 2 (BB2) */
+
+.but1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+    background-color: hsl(0, 67%, 43%);
+}
+.but2{
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    font-size: 50px;
+    background-color:hsl(0, 67%, 43%);
+    font-size: 30px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content:center ;
+    display: flex;
+    width: 100% ;
+    height: 100%;
+    background-image: linear-gradient(to bottom, hwb(67 69% 5%), rgb(141, 12, 12));
+}
+.imgfooter{
+    width: 100%;
+}
+
+/*Diseño para pantallas mas grandes (tablets y otros)*/
+
+@media (min-width: 600px) {
+    footer{
+        height: 70px;
+    }
+
+    #button2{
+        margin: 0px 20% 0px 20%;
+    }
+
+    .rrss {
+        justify-content: space-between;
+        margin: 5px 15px;
+    }
+}
+
+/*Diseño para tamaño escritorio*/
+
+@media(min-width: 900px){
+
+    .welcome img{
+        width: 70%;
+        height: 120px;
+        margin: 20px;
+    }
+    .welcome{
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+       height: 100%;
+    }
+    .s1 {
+        justify-content: center;
+        margin: 20px auto 50px;
+        width: 55%;
+    }
+    .box{
+        font-size: 18px;
+    }
+    .s2{
+        justify-content: center;
+        margin: 50px auto 50px;
+        width: 55%;
+    }
+    #info1 .lista{
+        font-size: 18px;    
+    }
+    #info2 .lista{
+        font-size: 18px;    
+    }
+    #info3 .lista{
+        font-size: 18px;    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
